@@ -20,12 +20,15 @@
                         </group>
                         <table alignment="left" id="4tZ-5q-aO9">
                             <items>
-                                <tableRow id="US8-Yf-ASp">
+                                <tableRow identifier="cell" id="US8-Yf-ASp" customClass="RowController" customModule="WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="myK-AE-yMG">
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="Label" id="bUf-MF-00d"/>
                                         </items>
                                     </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="bUf-MF-00d" id="hsr-iu-HPv"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>

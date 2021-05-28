@@ -16,11 +16,29 @@ class InterfaceController: WKInterfaceController {
     
     var watchSession : WCSession?
     
+    private var items = [String]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.updateTable()
+            }
+        }
+    }
+    
     override func awake(withContext context: Any?) {
        
         watchSession = WCSession.default
         watchSession?.delegate = self
         watchSession?.activate()
+    }
+    
+    private func updateTable(){
+        table.setNumberOfRows(items.count, withRowType: "cell")
+        
+        for (index, item) in items.enumerated(){
+            if let row = table.rowController(at: index) as? RowController{
+                row.titleLabel.setText(item)
+            }
+        }
     }
     
     @IBAction func addButtonTapped() {
