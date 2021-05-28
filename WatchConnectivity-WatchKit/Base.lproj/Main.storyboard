@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-LK-mTl">
-                                <rect key="frame" x="40" y="431" width="334" height="34"/>
+                                <rect key="frame" x="40" y="292.5" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Details.." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lPw-YZ-ARR">
-                                <rect key="frame" x="40" y="495" width="334" height="34"/>
+                                <rect key="frame" x="40" y="356.5" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28p-DW-JVg">
-                                <rect key="frame" x="129.5" y="569" width="155" height="35"/>
+                                <rect key="frame" x="129.5" y="430.5" width="155" height="35"/>
                                 <color key="backgroundColor" red="0.031998250630000002" green="0.54551488159999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="07W-G6-WC6"/>
@@ -55,7 +55,7 @@
                             <constraint firstItem="28p-DW-JVg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Pd-UK-QTh"/>
                             <constraint firstItem="lPw-YZ-ARR" firstAttribute="leading" secondItem="Jhp-LK-mTl" secondAttribute="leading" id="8l4-CB-Nao"/>
                             <constraint firstItem="Jhp-LK-mTl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="NEC-UT-aMn"/>
-                            <constraint firstItem="Jhp-LK-mTl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QH1-az-w7a"/>
+                            <constraint firstItem="28p-DW-JVg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PCm-gL-trm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jhp-LK-mTl" secondAttribute="trailing" constant="40" id="We3-HK-xM7"/>
                             <constraint firstItem="lPw-YZ-ARR" firstAttribute="top" secondItem="Jhp-LK-mTl" secondAttribute="bottom" constant="30" id="mS6-my-53n"/>
                             <constraint firstItem="Jhp-LK-mTl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhH-tQ-NTl"/>

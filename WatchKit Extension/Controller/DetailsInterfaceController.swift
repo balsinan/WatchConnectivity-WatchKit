@@ -25,6 +25,15 @@ class DetailsInterfaceController: WKInterfaceController {
     }
 
     @IBAction func editButtonTapped() {
+        self.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { results in
+            guard let results = results else { return }
+            OperationQueue.main.addOperation {
+                self.dismissTextInputController()
+                self.selectedNote.details = results[0] as? String ?? ""
+                self.detailsLabel.setText(self.selectedNote.details)
+    
+            }
+        }
     }
     
     override func willActivate() {

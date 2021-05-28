@@ -518,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DN25Z4W9R;
+				DEVELOPMENT_TEAM = VZF655UNPY;
 				INFOPLIST_FILE = "WatchConnectivity-WatchKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -537,7 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DN25Z4W9R;
+				DEVELOPMENT_TEAM = VZF655UNPY;
 				INFOPLIST_FILE = "WatchConnectivity-WatchKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -557,7 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DN25Z4W9R;
+				DEVELOPMENT_TEAM = VZF655UNPY;
 				IBSC_MODULE = WatchKit_Extension;
 				INFOPLIST_FILE = WatchKit/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sinan.WatchConnectivity-WatchKit.watchkitapp";
@@ -577,7 +577,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DN25Z4W9R;
+				DEVELOPMENT_TEAM = VZF655UNPY;
 				IBSC_MODULE = WatchKit_Extension;
 				INFOPLIST_FILE = WatchKit/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = "Sinan.WatchConnectivity-WatchKit.watchkitapp";
@@ -595,7 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DN25Z4W9R;
+				DEVELOPMENT_TEAM = VZF655UNPY;
 				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -617,7 +617,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3DN25Z4W9R;
+				DEVELOPMENT_TEAM = VZF655UNPY;
 				INFOPLIST_FILE = "WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
