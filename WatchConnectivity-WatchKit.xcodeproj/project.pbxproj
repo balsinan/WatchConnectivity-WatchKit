@@ -22,6 +22,7 @@
 		F77B3C16266173DE00B7A0FD /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B3C15266173DE00B7A0FD /* ComplicationController.swift */; };
 		F77B3C18266173DE00B7A0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F77B3C17266173DE00B7A0FD /* Assets.xcassets */; };
 		F77B3C1D266173DE00B7A0FD /* WatchKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F77B3BFE266173DD00B7A0FD /* WatchKit.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F77B3C272661743500B7A0FD /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B3C262661743500B7A0FD /* WatchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		F77B3C17266173DE00B7A0FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F77B3C19266173DE00B7A0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F77B3C1A266173DE00B7A0FD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F77B3C262661743500B7A0FD /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				F77B3BE8266172F900B7A0FD /* AppDelegate.swift */,
 				F77B3BEA266172F900B7A0FD /* SceneDelegate.swift */,
 				F77B3BEC266172F900B7A0FD /* ViewController.swift */,
+				F77B3C262661743500B7A0FD /* WatchManager.swift */,
 				F77B3BEE266172F900B7A0FD /* Main.storyboard */,
 				F77B3BF1266172FA00B7A0FD /* Assets.xcassets */,
 				F77B3BF3266172FA00B7A0FD /* LaunchScreen.storyboard */,
@@ -299,6 +302,7 @@
 				F77B3BED266172F900B7A0FD /* ViewController.swift in Sources */,
 				F77B3BE9266172F900B7A0FD /* AppDelegate.swift in Sources */,
 				F77B3BEB266172F900B7A0FD /* SceneDelegate.swift in Sources */,
+				F77B3C272661743500B7A0FD /* WatchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
