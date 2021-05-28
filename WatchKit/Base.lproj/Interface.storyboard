@@ -46,6 +46,25 @@
             </objects>
             <point key="canvasLocation" x="220" y="-3"/>
         </scene>
+        <!--DetailsInterfaceController-->
+        <scene sceneID="N5g-Xq-wpM">
+            <objects>
+                <controller identifier="DetailsInterfaceController" id="qPU-G2-9NG" customClass="DetailsInterfaceController" customModule="WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" id="InK-hJ-o1Z"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Edit" id="If8-ef-pB5">
+                            <connections>
+                                <action selector="editButtonTapped" destination="qPU-G2-9NG" id="9j9-aq-ZU9"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="detailsLabel" destination="InK-hJ-o1Z" id="Hbf-uS-5xK"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="484" y="-3"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>

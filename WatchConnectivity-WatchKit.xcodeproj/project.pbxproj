@@ -25,6 +25,7 @@
 		F77B3C272661743500B7A0FD /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B3C262661743500B7A0FD /* WatchManager.swift */; };
 		F7DE3CCE26619FCB00E54E27 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE3CCD26619FCB00E54E27 /* RowController.swift */; };
 		F7DE3CD02661A0A200E54E27 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE3CCF2661A0A200E54E27 /* Model.swift */; };
+		F7DE3CD52661A1E700E54E27 /* DetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE3CD42661A1E700E54E27 /* DetailsInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		F77B3C262661743500B7A0FD /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		F7DE3CCD26619FCB00E54E27 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
 		F7DE3CCF2661A0A200E54E27 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F7DE3CD42661A1E700E54E27 /* DetailsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,17 +163,42 @@
 		F77B3C0E266173DE00B7A0FD /* WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F7DE3CCD26619FCB00E54E27 /* RowController.swift */,
-				F77B3C0F266173DE00B7A0FD /* InterfaceController.swift */,
+				F7DE3CD22661A1C600E54E27 /* Model */,
+				F7DE3CD12661A1BE00E54E27 /* View */,
+				F7DE3CD32661A1CA00E54E27 /* Controller */,
 				F77B3C11266173DE00B7A0FD /* ExtensionDelegate.swift */,
 				F77B3C13266173DE00B7A0FD /* NotificationController.swift */,
 				F77B3C15266173DE00B7A0FD /* ComplicationController.swift */,
 				F77B3C17266173DE00B7A0FD /* Assets.xcassets */,
 				F77B3C19266173DE00B7A0FD /* Info.plist */,
 				F77B3C1A266173DE00B7A0FD /* PushNotificationPayload.apns */,
-				F7DE3CCF2661A0A200E54E27 /* Model.swift */,
 			);
 			path = "WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F7DE3CD12661A1BE00E54E27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE3CCD26619FCB00E54E27 /* RowController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7DE3CD22661A1C600E54E27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE3CCF2661A0A200E54E27 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F7DE3CD32661A1CA00E54E27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77B3C0F266173DE00B7A0FD /* InterfaceController.swift */,
+				F7DE3CD42661A1E700E54E27 /* DetailsInterfaceController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +349,7 @@
 				F7DE3CD02661A0A200E54E27 /* Model.swift in Sources */,
 				F77B3C12266173DE00B7A0FD /* ExtensionDelegate.swift in Sources */,
 				F77B3C10266173DE00B7A0FD /* InterfaceController.swift in Sources */,
+				F7DE3CD52661A1E700E54E27 /* DetailsInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

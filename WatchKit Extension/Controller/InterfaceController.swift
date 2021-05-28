@@ -41,6 +41,10 @@ class InterfaceController: WKInterfaceController {
         }
     }
     
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        pushController(withName: "DetailsInterfaceController", context: items[rowIndex])
+    }
+    
     @IBAction func addButtonTapped() {
         self.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { results in
             guard let results = results else { return }
