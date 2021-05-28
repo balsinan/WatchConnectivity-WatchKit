@@ -27,7 +27,7 @@ class WatchManager: NSObject{
         do {
             try watchSession?.updateApplicationContext(data)
         }catch{
-            print("error sending dict to watch!!!!1")
+            print("error sending dict to watch!")
         }
     }
 }

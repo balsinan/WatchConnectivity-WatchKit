@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     @IBAction func saveButtonTapped(_ sender: Any) {
         if taskTextField.text != ""{
-            WatchManager.shared.sendDataToWatch(data: ["task" : taskTextField.text!, "details" : detailsTextField.text ?? ""])
+            WatchManager.shared.sendDataToWatch(data: ["title" : taskTextField.text!, "details" : detailsTextField.text ?? ""])
         }
     }
 }
