@@ -42,7 +42,16 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func addButtonTapped() {
+        self.presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { results in
+            guard let results = results else { return }
+            OperationQueue.main.addOperation {
+                self.dismissTextInputController()
+                let note = Note(title: results[0] as? String ?? "", details: "")
+                self.items.append(note)
+            }
+        }
     }
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
     }
