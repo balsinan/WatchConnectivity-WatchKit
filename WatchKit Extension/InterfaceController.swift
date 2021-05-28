@@ -16,7 +16,7 @@ class InterfaceController: WKInterfaceController {
     
     var watchSession : WCSession?
     
-    private var items = [String]() {
+    private var items = [Note]() {
         didSet {
             DispatchQueue.main.async {
                 self.updateTable()
@@ -36,7 +36,7 @@ class InterfaceController: WKInterfaceController {
         
         for (index, item) in items.enumerated(){
             if let row = table.rowController(at: index) as? RowController{
-                row.titleLabel.setText(item)
+                row.titleLabel.setText(item.title)
             }
         }
     }
@@ -61,6 +61,7 @@ extension InterfaceController : WCSessionDelegate{
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         let title = applicationContext["title"] as! String
         let details = applicationContext["details"] as! String
-        
+        let note = Note(title: title, details: details)
+        items.append(note)
     }
 }
