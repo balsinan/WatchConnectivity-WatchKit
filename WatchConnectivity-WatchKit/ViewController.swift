@@ -13,12 +13,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        WatchManager.shared.delegate = self
     }
 
     @IBAction func saveButtonTapped(_ sender: Any) {
         if taskTextField.text != ""{
             WatchManager.shared.sendDataToWatch(data: ["title" : taskTextField.text!, "details" : detailsTextField.text ?? ""])
+        }
+    }
+}
+
+extension ViewController : WatchManagerProtocol{
+    func updateContext(success: Bool) {
+        taskTextField.text = ""
+        detailsTextField.text = ""
+        if success{
+            showAlert(title: "Success", message: "Context sent to watch")
+        }else{
+            showAlert(title: "Error", message: "Failed to send context")
         }
     }
 }

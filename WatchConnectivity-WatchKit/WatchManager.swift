@@ -8,10 +8,15 @@
 import Foundation
 import WatchConnectivity
 
+protocol WatchManagerProtocol {
+    func updateContext(success: Bool)
+}
+
 class WatchManager: NSObject{
     
     static let shared : WatchManager = WatchManager()
     private var watchSession : WCSession?
+    var delegate : WatchManagerProtocol?
     
     override init() {
         super.init()
@@ -26,9 +31,14 @@ class WatchManager: NSObject{
     func sendDataToWatch(data: [String: Any]){
         do {
             try watchSession?.updateApplicationContext(data)
+            updateContext(success: true)
         }catch{
-            print("error sending dict to watch!")
+            updateContext(success: false)
         }
+    }
+    
+    func updateContext(success: Bool) {
+        delegate?.updateContext(success: success)
     }
 }
 

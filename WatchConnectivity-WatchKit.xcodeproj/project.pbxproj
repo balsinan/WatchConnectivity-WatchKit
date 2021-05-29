@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71CE13C2662404B005A1D8E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71CE13B2662404B005A1D8E /* UIViewController+Extension.swift */; };
 		F77B3BE9266172F900B7A0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B3BE8266172F900B7A0FD /* AppDelegate.swift */; };
 		F77B3BEB266172F900B7A0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B3BEA266172F900B7A0FD /* SceneDelegate.swift */; };
 		F77B3BED266172F900B7A0FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77B3BEC266172F900B7A0FD /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F71CE13B2662404B005A1D8E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F77B3BE5266172F900B7A0FD /* WatchConnectivity-WatchKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchConnectivity-WatchKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F77B3BE8266172F900B7A0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F77B3BEA266172F900B7A0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F71CE13A26624034005A1D8E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F71CE13B2662404B005A1D8E /* UIViewController+Extension.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		F77B3BDC266172F900B7A0FD = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 		F77B3BE7266172F900B7A0FD /* WatchConnectivity-WatchKit */ = {
 			isa = PBXGroup;
 			children = (
+				F71CE13A26624034005A1D8E /* SupportingFiles */,
 				F77B3BE8266172F900B7A0FD /* AppDelegate.swift */,
 				F77B3BEA266172F900B7A0FD /* SceneDelegate.swift */,
 				F77B3BEC266172F900B7A0FD /* ViewController.swift */,
@@ -335,6 +346,7 @@
 				F77B3BED266172F900B7A0FD /* ViewController.swift in Sources */,
 				F77B3BE9266172F900B7A0FD /* AppDelegate.swift in Sources */,
 				F77B3BEB266172F900B7A0FD /* SceneDelegate.swift in Sources */,
+				F71CE13C2662404B005A1D8E /* UIViewController+Extension.swift in Sources */,
 				F77B3C272661743500B7A0FD /* WatchManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,7 +31,6 @@ class DetailsInterfaceController: WKInterfaceController {
                 self.dismissTextInputController()
                 self.selectedNote.details = results[0] as? String ?? ""
                 self.detailsLabel.setText(self.selectedNote.details)
-    
             }
         }
     }
