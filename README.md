@@ -3,7 +3,7 @@
 
 
 
-<h1 align="center">Metronome</h1>
+<h1 align="center">WatchConnectivity-WatchKit</h1>
 
 
 
