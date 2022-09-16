@@ -8,18 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var taskTextField: UITextField!
     @IBOutlet weak var detailsTextField: UITextField!
+    
+    var watchManager = WatchManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        WatchManager.shared.delegate = self
+        watchManager.delegate = self
     }
 
     @IBAction func saveButtonTapped(_ sender: Any) {
         if taskTextField.text != ""{
-            WatchManager.shared.sendDataToWatch(data: ["title" : taskTextField.text!, "details" : detailsTextField.text ?? ""])
+            watchManager.sendDataToWatch(data: ["title" : taskTextField.text!, "details" : detailsTextField.text ?? ""])
         }
     }
 }

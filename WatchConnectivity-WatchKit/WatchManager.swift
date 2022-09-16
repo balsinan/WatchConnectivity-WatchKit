@@ -8,19 +8,22 @@
 import Foundation
 import WatchConnectivity
 
-protocol WatchManagerProtocol {
+protocol WatchManagerProtocol: AnyObject {
     func updateContext(success: Bool)
 }
 
 class WatchManager: NSObject{
     
-    static let shared : WatchManager = WatchManager()
     private var watchSession : WCSession?
-    var delegate : WatchManagerProtocol?
+    weak var delegate : WatchManagerProtocol?
     
     override init() {
         super.init()
         
+        startSession()
+    }
+    
+    func startSession(){
         if WCSession.isSupported(){
             watchSession = WCSession.default
             watchSession?.delegate = self
